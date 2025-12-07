@@ -971,7 +971,7 @@ body {
   .often__right img {
     width: 100%;
     right: 0px;
-    max-width: 400px;
+    max-width: 200px;
   }
   .often__right-box {
     position: static;

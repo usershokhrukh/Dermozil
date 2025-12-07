@@ -62,12 +62,6 @@
 
   &__right {
     position: relative;
-
-    // & img {
-    //   height: 800px;
-    //   width: 100%;
-    //   background-color: red
-    // }
   }
   &__right-box {
     @include display();
@@ -132,7 +126,7 @@
       & img {
         width: 100%;
         right: 0px;
-        max-width: 400px;
+        max-width: 200px;
       }
     }
 
