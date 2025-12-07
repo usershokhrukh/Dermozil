@@ -52,5 +52,9 @@
   .navbar{
     @include paddingP(20px);
     flex-direction: column;
+
+    &__right {
+      flex-wrap: wrap;
+    }
   }
 }
