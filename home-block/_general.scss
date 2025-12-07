@@ -25,3 +25,22 @@ li {
 body {
   overflow-x: hidden !important;
 }
+
+
+.none {
+  display: none !important;
+}
+
+.show {
+  animation-name: show;
+  animation-duration: 0.3s;
+}
+
+@keyframes show {
+  0%{
+    transform: translateY(-20px);
+  }100%{
+    transform: translateY(0px);
+  }
+}
+
