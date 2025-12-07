@@ -73,6 +73,9 @@ li {
     padding: 20px 0px;
     flex-direction: column;
   }
+  .navbar__right {
+    flex-wrap: wrap;
+  }
 }
 .intro {
   display: flex;
@@ -88,6 +91,7 @@ li {
   gap: 0px;
 }
 .intro__title {
+  width: 90%;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
@@ -113,13 +117,15 @@ li {
 }
 .intro__center img {
   margin-top: 100px;
-  max-height: 230px;
+  max-height: 260px;
   max-width: 400px;
 }
 .intro__center-imgs {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  max-width: 1000px;
   margin-left: -200px;
   margin-right: -200px;
   margin-top: -100px;
@@ -157,6 +163,7 @@ li {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  justify-content: space-between;
   gap: 40px;
   position: relative;
   top: 4px;
@@ -166,5 +173,182 @@ li {
   border-bottom-right-radius: 40px;
 }
 .intro__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: end;
   position: relative;
+  width: 40%;
+}
+.intro__button {
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  padding: 20px;
+  border-radius: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  box-shadow: 0px 2px 5px 4px #FFD5D5;
+  color: #FFFFFF;
+  background-color: #ff7070;
+}
+.intro__button:hover {
+  opacity: 0.8;
+}
+.intro__button:active {
+  opacity: 1;
+}
+.intro__bottom-form-text {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background-color: white;
+  padding: 5px 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12.8602px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FF7070;
+  border-radius: 50px;
+  transform: rotate(13.31deg);
+}
+.intro__bottom-text {
+  max-width: 600px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.intro__bottom-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (min-width: 500px) and (max-width: 1100px) {
+  .intro__title {
+    font-size: 20px;
+    line-height: normal;
+    padding: 10px 0px;
+  }
+  .intro__center {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro__center-imgs {
+    position: relative;
+    left: -20%;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 100%;
+  }
+  .intro__img {
+    position: absolute;
+    bottom: 0px;
+    order: 3;
+  }
+  .intro__img-1 {
+    right: 25%;
+  }
+  .intro__img-2 {
+    right: 0%;
+  }
+  .intro__img1 {
+    top: -50px;
+    width: 200px;
+    height: 200px;
+    left: 80px;
+  }
+  .intro__img2 {
+    top: -70px;
+    left: -30px;
+    width: 100px;
+    height: 200px;
+  }
+  .intro__img3 {
+    top: -40px;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+  }
+  .intro__bottom {
+    flex-direction: column;
+    width: calc(100% + 2px);
+  }
+  .intro__form {
+    width: 100%;
+  }
+  .intro__button {
+    max-width: none;
+  }
+  .intro__bottom-form-text {
+    right: -20px;
+  }
+}
+@media (max-width: 500px) {
+  .intro {
+    width: 95%;
+  }
+  .intro__title {
+    font-size: 15px;
+    line-height: normal;
+  }
+  .intro__center {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro__center-imgs {
+    position: relative;
+    left: 0%;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .intro__img {
+    position: absolute;
+    bottom: 0px;
+    order: 3;
+  }
+  .intro__img-1 {
+    left: 0%;
+  }
+  .intro__img-2 {
+    right: 0%;
+  }
+  .intro__img1 {
+    top: -50px;
+    width: 200px;
+    height: 200px;
+    left: 80px;
+  }
+  .intro__img2 {
+    top: -70px;
+    left: -30px;
+    width: 100px;
+    height: 200px;
+  }
+  .intro__img3 {
+    top: -40px;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+  }
+  .intro__bottom {
+    flex-direction: column;
+    width: calc(100% + 2px);
+  }
+  .intro__form {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

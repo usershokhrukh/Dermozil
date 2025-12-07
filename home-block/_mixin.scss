@@ -18,3 +18,14 @@
   width: 90%;
   padding: $y 0px; 
 }
+
+
+@mixin hover() {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
