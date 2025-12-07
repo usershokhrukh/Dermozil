@@ -86,7 +86,7 @@
   &__bottom {
     @include display();
     padding: 20px;
-    justify-content: space-between;
+    justify-content: start;
     gap: 40px;
     position: relative;
     top: 4px;
@@ -253,6 +253,7 @@
     &__title {
       font-size: 15px;
       line-height: normal;
+      padding: 20px;
     }
 
     &__center {
