@@ -1,0 +1,165 @@
+.often {
+  @include display();
+  padding: 0px 0px 20px 0px;
+  flex-direction: column;
+  gap: 50px;
+
+  &__center{
+    @include display();
+    justify-content: space-between;
+    padding: 20px 0px 20px 26px;
+    background-color: #FCF9F7;
+    width: 100%;
+    gap: 70px;
+  }
+
+  &__left {
+    @include display();
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+
+  &__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16.5767px;
+    line-height: 24px;
+    /* or 145% */
+
+    color: #000000;
+  }
+
+  &__items {
+    @include display();
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px 20px 20px 0px;
+    border-bottom: 1px solid rgb(131, 129, 129)
+  }
+
+  &__items-text {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.5767px;
+    line-height: 24px;
+    /* or 145% */
+
+    color: #000000;
+
+
+  }
+  &__cards{
+    @include display();
+    flex-direction: column;
+    align-items: start;
+    // gap: 20px;
+  }
+
+  &__right {
+    position: relative;
+
+    // & img {
+    //   height: 800px;
+    //   width: 100%;
+    //   background-color: red
+    // }
+  }
+  &__right-box {
+    @include display();
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  &__right-box-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #000000;
+  }
+
+  &__right-button {
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 20px;
+    /* Biz bilan bog‘laning */
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #000000;
+    background-color: white;
+  }
+
+  &__form {
+    width: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .often {
+    &__center {
+      flex-wrap: wrap;
+      justify-content: end;
+    }
+
+    &__left {
+      margin-right: 20%;
+    }
+
+    &__right {
+      @include display();
+      flex-direction: column;
+      justify-content: end;
+      align-items: end;
+      width:100%;
+      & img {
+        width: 100%;
+        right: 0px;
+        max-width: 400px;
+      }
+    }
+
+    &__right-box {
+      position: static;
+      width:100%;
+      align-items: center;
+      
+    }
+
+    &__form {
+      padding: 20px;
+    }
+
+    &__form-button {
+      font-size: 15px;
+      padding: 10px;
+    }
+
+    &__form-text {
+      padding: 0px;
+      width: 100px;
+      background-color: white;
+      right: 0px;
+      top: 20px;
+      font-size: 10px;
+    }
+  }
+}
+
